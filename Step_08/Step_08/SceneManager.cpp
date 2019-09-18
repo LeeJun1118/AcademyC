@@ -1,4 +1,4 @@
-#include "ScaneManager.h"
+#include "SceneManager.h"
 
 #include "Logo.h"
 #include "Menu.h"
@@ -8,7 +8,7 @@
 SceneManager* SceneManager::m_pInstance = NULL;
 
 
-SceneManager::SceneManager():m_pScene(NULL)
+SceneManager::SceneManager() : m_pScene(NULL)
 {
 }
 
@@ -55,7 +55,5 @@ void SceneManager::Progress()
 void SceneManager::Render()
 {
 	//** 해당 씬의 랜더 함수를 실행 시킴.
-
-
 	m_pScene->Render();
 }

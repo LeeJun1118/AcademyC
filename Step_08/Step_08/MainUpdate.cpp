@@ -1,5 +1,5 @@
 #include "MainUpdate.h"
-#include "ScaneManager.h"
+#include "SceneManager.h"
 
 MainUpdate::MainUpdate()
 {
@@ -11,17 +11,17 @@ MainUpdate::~MainUpdate()
 
 void MainUpdate::Initialize()
 {
-	ScaneManager::GetInstance()->SetScane(SCANEIDS_LOGO);
+	SceneManager::GetInstance()->SetScene(SCENEIDS_LOGO);
 }
 
 void MainUpdate::Progress()
 {
-	ScaneManager::GetInstance()->Progress();
+	SceneManager::GetInstance()->Progress();
 }
 
 void MainUpdate::Render()
 {
-	ScaneManager::GetInstance()->Render();
+	SceneManager::GetInstance()->Render();
 }
 
 void MainUpdate::Release()

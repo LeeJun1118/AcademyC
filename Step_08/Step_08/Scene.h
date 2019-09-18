@@ -1,11 +1,11 @@
 #pragma once
 #include "Headers.h"
 
-class Scane
+class Scene
 {
 public:
-	Scane();
-	virtual ~Scane();
+	Scene();
+	virtual ~Scene();
 public:
 	virtual void Initialize() = 0;
 	virtual void Progress() = 0;

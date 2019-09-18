@@ -1,5 +1,5 @@
 #include "Logo.h"
-#include "ScaneManager.h"
+#include "SceneManager.h"
 
 Logo::Logo()
 {
@@ -12,17 +12,17 @@ Logo::~Logo()
 void Logo::Initialize()
 {
 	cout << "Logo::Initialize" << endl;
-	m_bNextScane = false;
+	m_bNextScene = false;
 }
 
 void Logo::Progress()
 {
-	if(m_bNextScane)
-		ScaneManager::GetInstance()->SetScane(SCANEIDS_MENU);
+	if(m_bNextScene)
+		SceneManager::GetInstance()->SetScene(SCENEIDS_MENU);
 	else
 	{
 		cout << "Logo::Progress" << endl;
-		m_bNextScane = true;
+		m_bNextScene = true;
 	}
 }
 

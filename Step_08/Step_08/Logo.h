@@ -1,7 +1,7 @@
 #pragma once
-#include "Scane.h"
+#include "Scene.h"
 
-class Logo : public Scane
+class Logo : public Scene
 {
 public:
 	Logo();
@@ -13,6 +13,6 @@ public:
 	virtual void Release()override;
 
 private:
-	bool m_bNextScane;
+	bool m_bNextScene;
 };
 

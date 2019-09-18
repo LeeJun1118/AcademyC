@@ -1,7 +1,7 @@
 #pragma once
-#include "Scane.h"
+#include "Scene.h"
 
-class Stage : public Scane
+class Stage : public Scene
 {
 public:
 	Stage();
