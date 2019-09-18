@@ -1,0 +1,10 @@
+#pragma once
+
+
+enum SCANEID
+{
+	SCANEIDS_LOGO,
+	SCANEIDS_MENU,
+	SCANEIDS_STAGE,
+	SCANEIDS_EXIT,
+};
