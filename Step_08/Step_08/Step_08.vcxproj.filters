@@ -28,12 +28,6 @@
     <Filter Include="소스 파일\01. Object\Monster">
       <UniqueIdentifier>{e67d8b60-724d-4d27-a5e8-237d8f8c5719}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\08. Manager">
-      <UniqueIdentifier>{1155855c-6856-4fb9-abb1-f6c9012c4dd6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\08. Manager\SceneManager">
-      <UniqueIdentifier>{9d924b58-27eb-4a09-9fe6-3fcd3d1cf063}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\02. Scene">
       <UniqueIdentifier>{bf845af0-2c63-4fef-9a9d-69c7af46d0c5}</UniqueIdentifier>
     </Filter>
@@ -45,6 +39,12 @@
     </Filter>
     <Filter Include="소스 파일\02. Scene\Stage">
       <UniqueIdentifier>{ed98c50c-cef0-4a02-b822-8f127d0393b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02. Scene\08. Manager">
+      <UniqueIdentifier>{1155855c-6856-4fb9-abb1-f6c9012c4dd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02. Scene\08. Manager\SceneManager">
+      <UniqueIdentifier>{9d924b58-27eb-4a09-9fe6-3fcd3d1cf063}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -73,7 +73,7 @@
       <Filter>소스 파일\02. Scene\Stage</Filter>
     </ClCompile>
     <ClCompile Include="SceneManager.cpp">
-      <Filter>소스 파일\08. Manager\SceneManager</Filter>
+      <Filter>소스 파일\02. Scene\08. Manager\SceneManager</Filter>
     </ClCompile>
     <ClCompile Include="Scene.cpp">
       <Filter>소스 파일\02. Scene</Filter>
@@ -108,7 +108,7 @@
       <Filter>소스 파일\02. Scene\Stage</Filter>
     </ClInclude>
     <ClInclude Include="SceneManager.h">
-      <Filter>소스 파일\08. Manager\SceneManager</Filter>
+      <Filter>소스 파일\02. Scene\08. Manager\SceneManager</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
       <Filter>소스 파일\02. Scene</Filter>
