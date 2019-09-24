@@ -5,6 +5,7 @@
 int main(void)
 {
 	MainUpdate Main;
+	Main.Initialize();
 
 	DWORD dwTime = GetTickCount();
 

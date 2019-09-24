@@ -12,19 +12,14 @@ Logo::~Logo()
 void Logo::Initialize()
 {
 	cout << "Logo::Initialize" << endl;
-	b_NextScene = false;
 }
 
 void Logo::Progress()
 {
-	if (b_NextScene)
-		SceneManager::GetInstance()->SetScene(SCENEID_MENU);
-	else
-	{
-		cout << "Logo::Progress" << endl;
-		b_NextScene = true;
-	}
+	cout << "Logo::Progress" << endl;
 
+	if (GetAsyncKeyState('A'))
+		SceneManager::GetInstance()->SetScene(SCENEID_MENU);
 }
 
 void Logo::Render()

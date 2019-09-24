@@ -7,7 +7,6 @@
 
 SceneManager* SceneManager::m_pInstance = NULL;
 
-
 SceneManager::SceneManager() : m_pScene(NULL)
 {
 }

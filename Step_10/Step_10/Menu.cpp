@@ -12,20 +12,16 @@ Menu::~Menu()
 void Menu::Initialize()
 {
 	cout << "Menu::Initialize" << endl;
-	b_NextScene = false;
 }
 
 void Menu::Progress()
 {
-	if (b_NextScene)
-		SceneManager::GetInstance()->SetScene(SCENEID_STAGE);
-	else
-	{
-		cout << "Menu::Progress" << endl;
-		b_NextScene = true;
-	}
+	cout << "Menu::Progress" << endl;
 
-	}
+	if (GetAsyncKeyState('S'))
+		SceneManager::GetInstance()->SetScene(SCENEID_STAGE);
+
+}
 
 void Menu::Render()
 {

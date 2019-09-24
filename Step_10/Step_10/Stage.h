@@ -1,5 +1,7 @@
 #pragma once
 #include "Scene.h"
+class Object;
+
 class Stage :public Scene
 {
 public:
@@ -11,6 +13,5 @@ public:
 	virtual void Progress()override;
 	virtual void Render()override;
 	virtual void Release()override;
-private:
-	bool b_NextScene;
+
 };

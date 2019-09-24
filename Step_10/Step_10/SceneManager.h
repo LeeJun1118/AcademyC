@@ -19,11 +19,12 @@ public:
 		return m_pInstance;
 	}
 private:
-	Scene* m_pScene;
+	Scene* m_pSceneState;
 
 public:
 	void SetScene(SCENEID _pState);
 	void Progress();
 	void Render();
+	void Release();
 };
 

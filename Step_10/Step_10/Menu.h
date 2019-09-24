@@ -12,6 +12,6 @@ public:
 	virtual void Progress()override;
 	virtual void Render()override;
 	virtual void Release()override;
-private:
-	bool b_NextScene;
+
+
 };
