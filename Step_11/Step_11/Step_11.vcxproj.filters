@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\00.MainUpdate">
+      <UniqueIdentifier>{63381871-04fa-4f48-86cc-c5e08bdec115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01.Object">
+      <UniqueIdentifier>{0dfc0926-dfd8-476f-889a-9d141f14e008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02.Scene">
+      <UniqueIdentifier>{67a4b496-8363-4a6e-8be9-9cc2c20d6a38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\08.Manager">
+      <UniqueIdentifier>{cb141cc5-057f-461d-9fdc-fc90b44c51d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\08.Manager\ObjectManager">
+      <UniqueIdentifier>{cd37669f-7407-43c0-b5a1-87971a946440}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\08.Manager\SceneManager">
+      <UniqueIdentifier>{42bec9fb-34a2-4fbc-bdb7-af661dcebf1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01.Object\Monster">
+      <UniqueIdentifier>{35f8232d-4df1-44c7-9fac-18f606560ae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01.Object\Player">
+      <UniqueIdentifier>{fc5ae7fc-bb76-4911-921e-dda7c921c42c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02.Scene\Logo">
+      <UniqueIdentifier>{c074e177-3844-4f61-8c2a-27b77604535e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02.Scene\Menu">
+      <UniqueIdentifier>{4a45e025-504b-426e-a85c-a6b1a25ed809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02.Scene\Stage">
+      <UniqueIdentifier>{b3f039b8-3ee2-498f-ae65-1195e095516f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Include">
+      <UniqueIdentifier>{7a1006c3-11f5-4526-8a94-75796847f20d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\08.Manager\ObjectFactory">
+      <UniqueIdentifier>{1bf8e51a-5c59-44a2-a43e-6e680c7612ae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainUpdate.cpp">
+      <Filter>Source Files\00.MainUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source Files\01.Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files\02.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Source Files\01.Object\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\01.Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Logo.cpp">
+      <Filter>Source Files\02.Scene\Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files\02.Scene\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>Source Files\02.Scene\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Source Files\08.Manager\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>Source Files\08.Manager\ObjectManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainUpdate.h">
+      <Filter>Source Files\00.MainUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Source Files\01.Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Source Files\02.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Source Files\01.Object\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Source Files\01.Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Logo.h">
+      <Filter>Source Files\02.Scene\Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Source Files\02.Scene\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>Source Files\02.Scene\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Source Files\08.Manager\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>Source Files\08.Manager\ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectFactory.h">
+      <Filter>Source Files\08.Manager\ObjectFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

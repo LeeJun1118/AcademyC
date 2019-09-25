@@ -1,0 +1,9 @@
+#pragma once
+
+enum SCENEIDS
+{
+	SCENEIDS_LOGO,
+	SCENEIDS_MENU,
+	SCENEIDS_STAGE,
+	SCENEIDS_EXIT,
+};
