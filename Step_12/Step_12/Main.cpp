@@ -11,7 +11,7 @@ int main(void)
 
 	while (true)
 	{
-		if (dwTime + 50 < GetTickCount())
+		if (dwTime + 150 < GetTickCount())
 		{
 			dwTime = GetTickCount();
 			system("cls");
@@ -20,6 +20,7 @@ int main(void)
 			Main.Render();
 		}
 	}
+
 
 	return 0;
 }

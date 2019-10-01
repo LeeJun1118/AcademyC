@@ -2,7 +2,6 @@
 #include "Object.h"
 #include "CollisionManager.h"
 
-
 ObjectManager* ObjectManager::m_pInstance = NULL;
 
 ObjectManager::ObjectManager()
@@ -16,16 +15,15 @@ ObjectManager::~ObjectManager()
 
 void ObjectManager::Progress()
 {
-	m_pPlayer->Initialize();
-	m_pMonster->Initialize();
-	if (CollisionManager::CollisionRect(m_pPlayer,m_pMonster))
-	{
-		cout << "충돌!!!" << endl;
+	m_pPlayer->Progress();
+	m_pMonster->Progress();
+
+	if (CollisionManager::CollisionRect(m_pPlayer, m_pMonster))
+	{ 
+		cout << "충돌!!!!!" << endl;
 
 		m_pPlayer->SetPosition(Vector3(0.f, 0.f, 0.f));
 	}
-
-
 }
 
 void ObjectManager::Render()

@@ -8,7 +8,6 @@ public:
 	virtual ~Object();
 protected:
 	Transform m_tInfo;
-
 public:
 	virtual void Initialize() = 0;
 	virtual void Progress() = 0;

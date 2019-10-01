@@ -37,7 +37,8 @@ void Player::Progress()
 
 void Player::Render()
 {
-	cout << endl << "X: " << m_tInfo.Position.x << endl << "Y: " << m_tInfo.Position.y << endl;
+	cout << endl << "X : " << m_tInfo.Position.x << endl <<
+		"Y : " << m_tInfo.Position.y << endl;
 }
 
 void Player::Release()

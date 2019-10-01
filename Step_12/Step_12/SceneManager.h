@@ -2,7 +2,6 @@
 #include "Headers.h"
 
 class Scene;
-
 class SceneManager
 {
 private:
@@ -13,22 +12,19 @@ public:
 private:
 	static SceneManager* m_pInstance;
 public:
-	static SceneManager* GetInstance() {
+	static SceneManager* GetInstance()
+	{
 		if (m_pInstance == NULL)
 			m_pInstance = new SceneManager;
 		return m_pInstance;
 	}
 
 private:
-	class Scene* m_pSceneState;
-
+	Scene* m_pSceneState;
 public:
-	void SetScene(SCENEIDS _eState);
+	void SetScene(STATEID _eStage);
 	void Progress();
 	void Render();
 	void Release();
-		
 };
-
-
 

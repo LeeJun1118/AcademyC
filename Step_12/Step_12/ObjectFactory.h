@@ -20,6 +20,7 @@ public:
 
 		return pPlayer;
 	}
+
 	static Object* CreateMonster()
 	{
 		Object* pMonster = new Monster;
@@ -36,4 +37,3 @@ public:
 		return pMonster;
 	}
 };
-

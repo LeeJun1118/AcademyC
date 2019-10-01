@@ -1,12 +1,11 @@
 #pragma once
 #include "Object.h"
 
-class Player :public Object
+class Player : public Object
 {
 public:
 	Player();
 	virtual ~Player();
-
 public:
 	virtual void Initialize()override;
 	virtual void Progress()override;

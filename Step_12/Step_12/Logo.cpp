@@ -19,9 +19,7 @@ void Logo::Progress()
 	cout << "Logo::Progress" << endl;
 
 	if (GetAsyncKeyState('A'))
-	{
-		SceneManager::GetInstance()->SetScene(SCENEIDS_MENU);
-	}
+		SceneManager::GetInstance()->SetScene(STATEIDS_MENU);
 }
 
 void Logo::Render()

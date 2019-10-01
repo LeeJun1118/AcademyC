@@ -1,7 +1,6 @@
 #include "MainUpdate.h"
 #include "SceneManager.h"
 
-
 MainUpdate::MainUpdate()
 {
 }
@@ -12,7 +11,7 @@ MainUpdate::~MainUpdate()
 
 void MainUpdate::Initialize()
 {
-	SceneManager::GetInstance()->SetScene(SCENEIDS_LOGO);
+	SceneManager::GetInstance()->SetScene(STATEIDS_LOGO);
 }
 
 void MainUpdate::Progress()
