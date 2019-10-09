@@ -35,39 +35,55 @@ typedef struct tagList
 
 int iCount = 0;
 
-//** 營敝 л熱
-void AddObject(List* _pList, Object* _pObj)
-{
-	if (_pList->pBack != NULL)
-		return;
-	else
-		AddObject(_pList->pBack, _pList->pBack->pObj);
-}
 
 void Output(List* _pList)
 {
-	cout << _pList->pObj->Index << endl;
+	
 
 	if (_pList->pBack == NULL)
+		return;
+	else
 	{
+		cout << _pList->pObj->Index << endl;
+		Output(_pList->pBack);
+	}
+		
+}
+
+//** 營敝 л熱
+void AddObject(List* _pList, Object* _pObj)
+{
+	if (_pList->pBack == NULL)
+	{
+		tagList* pTemp = new List;
+		pTemp->pObj = new Object;
+		pTemp->pBack = NULL;
+
+		_pList->pObj = _pObj;
+		_pList->pBack = pTemp;
+
 		return;
 	}
 	else
-	{
-		Output(_pList->pBack);
-	}
+		AddObject(_pList->pBack,_pObj);
 }
-
 int main(void)
 {
 	tagList* pList = new List;
+	pList->pBack = NULL;
 
 	Object* pObj1 = new Object;
 	pObj1->Index = 0;
-
 	AddObject(pList, pObj1);
 
-	Output(pList);
+	Object* pObj2 = new Object;
+	pObj2->Index = 1;
+	AddObject(pList, pObj2);
 
+	Object* pObj3 = new Object;
+	pObj3->Index = 2;
+	AddObject(pList, pObj3);
+
+	Output(pList);
 	return 0;
 }
