@@ -40,6 +40,7 @@ void Menu::Progress()
 	case 3:
 		//** 삭제
 		cout << "삭제" << endl;
+		StudentList.pop_back();
 		break;
 
 	default:
