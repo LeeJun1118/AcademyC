@@ -1,0 +1,9 @@
+#pragma once
+
+enum SCENEID
+{
+	SCENEID_MENU,
+	SCENEID_INFO,
+	SCENEID_ADD,
+	SCENEID_DELETE,
+};
