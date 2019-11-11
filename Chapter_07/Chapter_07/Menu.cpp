@@ -93,6 +93,9 @@ void Menu::Progress()
 						{
 							cout << endl << "정말 삭제하시겠습니까? (y/n)" << endl;
 
+							char c = _getch();
+							cout << c << endl;
+
 							if (c == 'y' || c == 'Y')
 								iter = StudentList.erase(iter);
 						}
@@ -125,7 +128,8 @@ void Menu::Progress()
 						if (c == 'y' || c == 'Y')
 						{
 							cout << endl << "정말 삭제하시겠습니까? (y/n)" ;
-
+							char c = _getch();
+							cout << c << endl;
 							if (c == 'y' || c == 'Y')
 								iter = StudentList.erase(iter);
 						}
@@ -142,13 +146,30 @@ void Menu::Progress()
 			case 3:
 				StudentList.clear();
 				break;
-			default:
-				break;
+
 			}
 		}
 
 		break;
+	case 4:
+	{
+		cout << endl << "정렬하면 기존에 있던 정보는 사라집니다. 그래도 계속 하시겠습니까 ? (y/n)  : ";
 
+		char c = _getch();
+		cout << c << endl;
+
+		if (c == 'y' || c == 'Y')
+		{
+			m_iIndex = 0;
+
+			for (list<Object*>::iterator iter = StudentList.begin();
+				iter != StudentList.end(); ++iter)
+			{
+				(*iter)->SetIndex(++m_iIndex);
+			}
+		}
+	}
+	break;
 	default:
 		//** 잘못 입력 하였습니다.
 		cout << "잘못 입력 하였습니다." << endl;
@@ -165,7 +186,9 @@ void Menu::Render()
 	cout << "** Info" << endl;
 	cout << " 1. 학생 목록" << endl;
 	cout << " 2. 추가" << endl;
-	cout << " 3. 삭제" << endl << endl;
+	cout << " 3. 삭제" << endl;
+	cout << " 4. 정렬" << endl << endl;
+
 	cout << "입력 : ";
 
 	m_iChoice = _getch();
