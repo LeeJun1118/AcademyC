@@ -17,6 +17,8 @@ struct Vector3
 struct Transform
 {
 	Vector3 Position;
-	Vector3 Rotate;
+	
 	Vector3 Scale;
+
+	int Rotate;
 };

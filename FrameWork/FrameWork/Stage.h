@@ -1,18 +1,14 @@
 #pragma once
-#include "Object.h"
+#include "Scene.h"
 
-class BackGround : public Object
+class Stage : public Scene
 {
 public:
-	BackGround();
-	virtual~BackGround();
-
+	Stage();
+	virtual ~Stage();
 public:
 	virtual void Initialize()override;
 	virtual void Progress()override;
 	virtual void Render()override;
 	virtual void Release()override;
-protected:
-	Transform m_pBlock;
 };
-

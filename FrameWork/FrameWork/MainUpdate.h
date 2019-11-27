@@ -14,6 +14,7 @@ public:
 	void Release();
 private:
 	Object* m_pPlayer;
+	Object* m_pBackGround;
 
 };
 

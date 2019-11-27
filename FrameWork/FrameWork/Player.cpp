@@ -1,4 +1,5 @@
 #include "Player.h"
+#include "Enum.h"
 #include "CursorManager.h"
 
 Player::Player()
@@ -20,46 +21,60 @@ void Player::Initialize()
 void Player::Progress()
 {
 	if (GetAsyncKeyState(VK_UP))
-	{
-		if (m_tInfo.Position.y > 1)
-		{
-			m_tInfo.Position.y -= 1;
-		}
-	}
+		m_tInfo.Rotate = DIRIDS_RIGHT;
 
 	if (GetAsyncKeyState(VK_DOWN))
-	{
-		if (m_tInfo.Position.y < WINSIZEY -3)
-		{
-			m_tInfo.Position.y += 1;
-		}
-
-	}
+		m_tInfo.Rotate = DIRIDS_RIGHT;
 
 	if (GetAsyncKeyState(VK_LEFT))
-	{
-		if (m_tInfo.Position.x > 2)
-		{
-			m_tInfo.Position.x -= 2;
-		}
-		
-	}
+		m_tInfo.Rotate = DIRIDS_RIGHT;
 
 	if (GetAsyncKeyState(VK_RIGHT))
+		m_tInfo.Rotate = DIRIDS_RIGHT;
+
+	switch (m_tInfo.Rotate)
 	{
-		if (m_tInfo.Position.x < WINSIZEX - 4)
+	case DIRIDS_UP:
+		if (m_tInfo.Position.y != 1)
+			m_tInfo.Position.y -= 1;
+		break;
+
+	case DIRIDS_DOWN:
+		if (m_tInfo.Position.y != 27)
+			m_tInfo.Position.y += 1;
+		break;
+
+	case DIRIDS_LEFT:
+		if ((m_tInfo.Position.y == 14 || m_tInfo.Position.y == 15))
 		{
-			m_tInfo.Position.x += 2;
+			m_tInfo.Position.x -= 1;
+
+			if (m_tInfo.Position.x < 0)
+				m_tInfo.Position.x = 118;
 		}
-		
+		else if (m_tInfo.Position.x > 2)
+			m_tInfo.Position.x -= 1;
+		break;
+
+	case DIRIDS_RIGHT:
+		if ((m_tInfo.Position.y == 14 || m_tInfo.Position.y == 15))
+		{
+			m_tInfo.Position.x += 1;
+
+			if (m_tInfo.Position.x > 118)
+				m_tInfo.Position.x = 0;
+		}
+		else if (m_tInfo.Position.x > 118)
+			m_tInfo.Position.x += 1;
+		break;
 	}
 }
 
 void Player::Render()
 {
 	CursorManager::OnDrawText(
-		m_tInfo.Position.x, 
-		m_tInfo.Position.y, 
+		m_tInfo.Position.x,
+		m_tInfo.Position.y,
 		m_pTexture);
 }
 

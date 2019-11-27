@@ -31,8 +31,23 @@
     <Filter Include="Header Files\Include">
       <UniqueIdentifier>{71b1089f-d107-4235-9aa4-ba83a0b8a981}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\BackGround">
+    <Filter Include="Source Files\01.Object\BackGround">
       <UniqueIdentifier>{c6bcfab9-e236-4d0d-af4a-afe16e2f83ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\SceneManager">
+      <UniqueIdentifier>{adcbf262-8a03-432c-a051-710fe745f560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02.Scene">
+      <UniqueIdentifier>{90079074-4c6a-4cc8-a672-886cd75de742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02.Scene\Logo">
+      <UniqueIdentifier>{fe9c99e7-6756-4dee-a992-f1384ca1925c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02.Scene\Menu">
+      <UniqueIdentifier>{ed1c44db-4102-4135-9e5e-5f57f5c053ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02.Scene\Stage">
+      <UniqueIdentifier>{67f362ad-2f47-414f-99b5-2abfcd861cc2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -55,7 +70,25 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BackGround.h">
-      <Filter>Source Files\BackGround</Filter>
+      <Filter>Source Files\01.Object\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Source Files\02.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Logo.h">
+      <Filter>Source Files\02.Scene\Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Source Files\02.Scene\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>Source Files\02.Scene\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Source Files\Manager\SceneManager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -72,7 +105,22 @@
       <Filter>Source Files\01.Object\Player</Filter>
     </ClCompile>
     <ClCompile Include="BackGround.cpp">
-      <Filter>Source Files\BackGround</Filter>
+      <Filter>Source Files\01.Object\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files\02.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Logo.cpp">
+      <Filter>Source Files\02.Scene\Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files\02.Scene\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>Source Files\02.Scene\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Source Files\Manager\SceneManager</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,15 +1,12 @@
 #include "Headers.h"
 #include "MainUpdate.h"
-#include "BackGround.h"
 
 int main(void)
 {
 	MainUpdate Main;
 	Main.Initialize();
-
-	BackGround Back;
-	Back.Inititalize();
 	
+
 	DWORD dwTime = GetTickCount();
 	
 	while (true)
@@ -19,7 +16,6 @@ int main(void)
 			dwTime = GetTickCount();
 			system("cls");
 
-			Back.Render();
 			Main.Progress();
 			Main.Render();
 		}
