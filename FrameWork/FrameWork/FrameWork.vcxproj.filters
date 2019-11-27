@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\00.MainUpdate">
+      <UniqueIdentifier>{00ede69b-4f8c-4d84-ba49-d13f962dd691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01.Object">
+      <UniqueIdentifier>{0bffa724-2401-44cc-82a7-941341b1ce8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01.Object\Player">
+      <UniqueIdentifier>{3bc1b3f5-f405-4845-913c-71d4b910871e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager">
+      <UniqueIdentifier>{63503dbb-e869-4f8d-8760-9b071395701f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\CursorManager">
+      <UniqueIdentifier>{7f07e440-89b8-4097-9900-2e65202a7032}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Include">
+      <UniqueIdentifier>{71b1089f-d107-4235-9aa4-ba83a0b8a981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BackGround">
+      <UniqueIdentifier>{c6bcfab9-e236-4d0d-af4a-afe16e2f83ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainUpdate.h">
+      <Filter>Source Files\00.MainUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Source Files\01.Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Source Files\01.Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CursorManager.h">
+      <Filter>Source Files\Manager\CursorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BackGround.h">
+      <Filter>Source Files\BackGround</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainUpdate.cpp">
+      <Filter>Source Files\00.MainUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source Files\01.Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\01.Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="BackGround.cpp">
+      <Filter>Source Files\BackGround</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
