@@ -1,6 +1,8 @@
 #include "Logo.h"
 
 #include "CursorManager.h"
+#include "SceneManaer.h"
+
 
 Logo::Logo()
 {
@@ -150,10 +152,16 @@ void Logo::Initialize()
 	//** 7. 1
 	//** 8. 2
 	//** 9. 4
+	if (GetAsyncKeyState(VK_SPACE))
+	{
+		Logo::Progress();
+	}
 }
 
 void Logo::Progress()
 {
+	//SceneManaer::GetInstance()->Progress();
+	SceneManaer::GetInstance()->SetScene(STATEIDS_STAGE);
 }
 
 void Logo::Render()

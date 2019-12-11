@@ -10,7 +10,6 @@ Menu::~Menu()
 
 void Menu::Initialize()
 {
-
 }
 
 void Menu::Progress()
