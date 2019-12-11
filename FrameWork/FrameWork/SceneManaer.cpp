@@ -1,22 +1,20 @@
-#include "SceneManager.h"
+#include "SceneManaer.h"
 
 #include "Logo.h"
 #include "Menu.h"
 #include "Stage.h"
-#include "SceneManager.h"
 
-SceneManager* SceneManager::m_pInstance = NULL;
-SceneManager::SceneManager()
+SceneManaer* SceneManaer::m_pInstance = NULL;
+
+SceneManaer::SceneManaer() : m_pSceneState(NULL)
 {
 }
 
-SceneManager::~SceneManager()
+SceneManaer::~SceneManaer()
 {
 }
 
-
-
-void SceneManager::SetScene(STATEID _State)
+void SceneManaer::SetScene(STATEID _State)
 {
 	if (m_pSceneState != NULL)
 	{
@@ -39,17 +37,18 @@ void SceneManager::SetScene(STATEID _State)
 		break;
 
 	case STATEIDS_EXIT:
-
+		exit(NULL);
 		break;
 	}
 	m_pSceneState->Initialize();
 }
 
-void SceneManager::Progress()
+void SceneManaer::Progress()
 {
+	m_pSceneState->Progress();
 }
 
-void SceneManager::Render()
+void SceneManaer::Render()
 {
+	m_pSceneState->Render();
 }
-

@@ -1,6 +1,7 @@
 #pragma once
 #include "Scene.h"
 
+
 class Logo : public Scene
 {
 public:
@@ -11,4 +12,8 @@ public:
 	virtual void Progress()override;
 	virtual void Render()override;
 	virtual void Release()override;
+private:
+	Texture* m_pLogo[4][9];
+public:
 };
+

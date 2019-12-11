@@ -1,10 +1,11 @@
 #include "MainUpdate.h"
-#include "Player.h"
+
 #include "CursorManager.h"
-#include "BackGround.h"
+#include "SceneManaer.h"
 
 
-MainUpdate::MainUpdate() : m_pPlayer(NULL)
+
+MainUpdate::MainUpdate()
 {
 	CursorManager::SetCursorDisable();
 }
@@ -16,27 +17,20 @@ MainUpdate::~MainUpdate()
 
 void MainUpdate::Initialize()
 {
-	m_pPlayer = new Player;
-	m_pPlayer->Initialize();
-
-	m_pBackGround = new BackGround;
-	m_pBackGround->Initialize();
+	SceneManaer::GetInstance()->SetScene(STATEIDS_LOGO);
 }
 
 void MainUpdate::Progress()
 {
-	m_pPlayer->Progress();
-	m_pBackGround->Progress();
+	SceneManaer::GetInstance()->Progress();
 }
 
 void MainUpdate::Render()
 {
-	m_pPlayer->Render();
-	m_pBackGround->Render();
+	SceneManaer::GetInstance()->Render();
 }
 
 void MainUpdate::Release()
 {
-	delete m_pPlayer;
-	m_pPlayer = NULL;
+	
 }

@@ -13,44 +13,65 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\00.MainUpdate">
-      <UniqueIdentifier>{00ede69b-4f8c-4d84-ba49-d13f962dd691}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\01.Object">
-      <UniqueIdentifier>{0bffa724-2401-44cc-82a7-941341b1ce8e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\01.Object\Player">
-      <UniqueIdentifier>{3bc1b3f5-f405-4845-913c-71d4b910871e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Manager">
-      <UniqueIdentifier>{63503dbb-e869-4f8d-8760-9b071395701f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Manager\CursorManager">
-      <UniqueIdentifier>{7f07e440-89b8-4097-9900-2e65202a7032}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Include">
       <UniqueIdentifier>{71b1089f-d107-4235-9aa4-ba83a0b8a981}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\01.Object\BackGround">
-      <UniqueIdentifier>{c6bcfab9-e236-4d0d-af4a-afe16e2f83ff}</UniqueIdentifier>
+    <Filter Include="Source Files\00.MainUpdate">
+      <UniqueIdentifier>{fc2bbf76-f666-4379-86ea-4150f9abd1d7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Manager\SceneManager">
-      <UniqueIdentifier>{adcbf262-8a03-432c-a051-710fe745f560}</UniqueIdentifier>
+    <Filter Include="Source Files\01.Object">
+      <UniqueIdentifier>{ea34c156-4e3a-44cc-b4bf-3c4de008c905}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\02.Scene">
-      <UniqueIdentifier>{90079074-4c6a-4cc8-a672-886cd75de742}</UniqueIdentifier>
+      <UniqueIdentifier>{34677d89-0d34-4ff6-8a16-7165ea299e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager">
+      <UniqueIdentifier>{bbf5404f-6b84-4c55-8bd3-a360545d5f4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01.Object\BackGround">
+      <UniqueIdentifier>{e3759ab2-8a09-4ec7-8fd0-64633266823a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01.Object\Player">
+      <UniqueIdentifier>{d8edf121-b634-4ea3-933e-f2e7ad94aa73}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\02.Scene\Logo">
-      <UniqueIdentifier>{fe9c99e7-6756-4dee-a992-f1384ca1925c}</UniqueIdentifier>
+      <UniqueIdentifier>{b5e4006b-3c73-4572-9174-de1c1cf78083}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\02.Scene\Menu">
-      <UniqueIdentifier>{ed1c44db-4102-4135-9e5e-5f57f5c053ec}</UniqueIdentifier>
+      <UniqueIdentifier>{507817d8-1ba8-4d20-adf1-da355eecab9c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\02.Scene\Stage">
-      <UniqueIdentifier>{67f362ad-2f47-414f-99b5-2abfcd861cc2}</UniqueIdentifier>
+      <UniqueIdentifier>{6fa7c10d-d103-4ed7-801d-357537a4e7ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\CursorManager">
+      <UniqueIdentifier>{613dd4b2-ce1e-48d9-9aa2-2cd56f7a1767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\ObjectManager">
+      <UniqueIdentifier>{5c10a963-3fd4-45f3-801d-70bbced3f383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\SceneManager">
+      <UniqueIdentifier>{54a66b58-2c11-4527-9c6e-4f924f6f95d4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Struct.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="BackGround.h">
+      <Filter>Source Files\01.Object\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="CursorManager.h">
+      <Filter>Source Files\Manager\CursorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Logo.h">
+      <Filter>Source Files\02.Scene\Logo</Filter>
+    </ClInclude>
     <ClInclude Include="MainUpdate.h">
       <Filter>Source Files\00.MainUpdate</Filter>
     </ClInclude>
@@ -60,40 +81,31 @@
     <ClInclude Include="Player.h">
       <Filter>Source Files\01.Object\Player</Filter>
     </ClInclude>
-    <ClInclude Include="CursorManager.h">
-      <Filter>Source Files\Manager\CursorManager</Filter>
+    <ClInclude Include="Menu.h">
+      <Filter>Source Files\02.Scene\Menu</Filter>
     </ClInclude>
-    <ClInclude Include="Struct.h">
-      <Filter>Header Files\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="Headers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BackGround.h">
-      <Filter>Source Files\01.Object\BackGround</Filter>
-    </ClInclude>
-    <ClInclude Include="Enum.h">
-      <Filter>Header Files\Include</Filter>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>Source Files\Manager\ObjectManager</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
       <Filter>Source Files\02.Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Logo.h">
-      <Filter>Source Files\02.Scene\Logo</Filter>
-    </ClInclude>
-    <ClInclude Include="Menu.h">
-      <Filter>Source Files\02.Scene\Menu</Filter>
+    <ClInclude Include="SceneManaer.h">
+      <Filter>Source Files\Manager\SceneManager</Filter>
     </ClInclude>
     <ClInclude Include="Stage.h">
       <Filter>Source Files\02.Scene\Stage</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneManager.h">
-      <Filter>Source Files\Manager\SceneManager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BackGround.cpp">
+      <Filter>Source Files\01.Object\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="Logo.cpp">
+      <Filter>Source Files\02.Scene\Logo</Filter>
     </ClCompile>
     <ClCompile Include="MainUpdate.cpp">
       <Filter>Source Files\00.MainUpdate</Filter>
@@ -104,23 +116,20 @@
     <ClCompile Include="Player.cpp">
       <Filter>Source Files\01.Object\Player</Filter>
     </ClCompile>
-    <ClCompile Include="BackGround.cpp">
-      <Filter>Source Files\01.Object\BackGround</Filter>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files\02.Scene\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>Source Files\Manager\ObjectManager</Filter>
     </ClCompile>
     <ClCompile Include="Scene.cpp">
       <Filter>Source Files\02.Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Logo.cpp">
-      <Filter>Source Files\02.Scene\Logo</Filter>
-    </ClCompile>
-    <ClCompile Include="Menu.cpp">
-      <Filter>Source Files\02.Scene\Menu</Filter>
+    <ClCompile Include="SceneManaer.cpp">
+      <Filter>Source Files\Manager\SceneManager</Filter>
     </ClCompile>
     <ClCompile Include="Stage.cpp">
       <Filter>Source Files\02.Scene\Stage</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneManager.cpp">
-      <Filter>Source Files\Manager\SceneManager</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

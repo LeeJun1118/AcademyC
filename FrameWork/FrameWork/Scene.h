@@ -1,6 +1,7 @@
 #pragma once
+#include "Headers.h"
 
-class Scene 
+class Scene
 {
 public:
 	Scene();
@@ -10,4 +11,5 @@ public:
 	virtual void Progress() = 0;
 	virtual void Render() = 0;
 	virtual void Release() = 0;
-}
+};
+

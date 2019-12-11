@@ -1,17 +1,24 @@
+/*
+ * e-mail : winstonegames@naver.com
+ */
 #include "Headers.h"
 #include "MainUpdate.h"
+
+int FrameTime = 0;
+
+
 
 int main(void)
 {
 	MainUpdate Main;
 	Main.Initialize();
 	
-
+	FrameTime = 50;
 	DWORD dwTime = GetTickCount();
-	
+
 	while (true)
 	{
-		if (dwTime < GetTickCount())
+		if (dwTime + FrameTime < GetTickCount())
 		{
 			dwTime = GetTickCount();
 			system("cls");
@@ -24,22 +31,3 @@ int main(void)
 	return 0;
 }
 
-
-
-
-/*
-BackGround class 생성
-
-BackGround Render 함수를 호출하여 그리기.
-
-
-힌트 1
-for(int y = 0 ; y < 30 ; y++)
-{
-	for(int x = 0 ; x < 120 ; x += 2)
-	{
-
-	}
-}
-
-*/
